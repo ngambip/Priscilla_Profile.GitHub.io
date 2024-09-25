@@ -4807,16 +4807,21 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   }
 }
 
-.tools-list.horizontal-list {
-    display: flex;
-    flex-wrap: wrap; /* Ensures items wrap to new line when needed */
+.tools-list {
+    display: flex; /* This makes the list of tools appear in a row */
+    justify-content: space-between; /* Optional: Adds space between tools */
+    flex-wrap: wrap; /* Ensures tools wrap to the next line if the screen is too narrow */
 }
 
-.tools-list.horizontal-list .tool {
-    flex: 0 0 auto; /* Prevents items from growing and shrinking */
-    margin-right: 20px; /* Adjust margin between items as needed */
+.tool {
+    text-align: center; /* Centers the image and name */
+    margin: 10px; /* Adjust the space between the items */
 }
 
-.tools-list.horizontal-list .tool:last-child {
-    margin-right: 0; /* Removes margin from the last item to prevent extra space */
+.tool img {
+    max-width: 100px; /* Optional: Adjust the size of the images */
+}
+
+.tool p {
+    margin-top: 5px; /* Adds space between the image and the tool name */
 }
