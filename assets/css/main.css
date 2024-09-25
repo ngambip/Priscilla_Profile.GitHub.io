@@ -4819,7 +4819,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .tool {
     text-align: center; /* Centers the image and name */
-    margin: 10px; /* Adjust the space between the items */
+    margin: 8px; /* Adjust the space between the items */
 }
 
 .tool img {
