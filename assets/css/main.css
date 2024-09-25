@@ -4806,6 +4806,10 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     visibility: visible;
   }
 }
+.tools-section {
+    margin-top: 50px; /* Adjust this value to create space between sections */
+    padding-top: 20px; /* Optional: You can use padding as well */
+}
 
 .tools-list {
     display: flex; /* This makes the list of tools appear in a row */
@@ -4826,7 +4830,3 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     margin-top: 5px; /* Adds space between the image and the tool name */
 }
 
-.tools-section {
-    margin-top: 50px; /* Adjust this value to create space between sections */
-    padding-top: 20px; /* Optional: You can use padding as well */
-}
