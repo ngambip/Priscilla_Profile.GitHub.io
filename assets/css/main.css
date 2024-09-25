@@ -4807,32 +4807,16 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   }
 }
 
-/* CSS for the Tools Section */
-.tools-section {
-    text-align: center;
-    margin: 2em 0;
-}
-
-.tools-list {
+.tools-list.horizontal-list {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    gap: 20px; /* Adds space between the tools */
+    flex-wrap: wrap; /* Ensures items wrap to new line when needed */
 }
 
-.tool {
-    display: flex;
-    flex-direction: column; /* Makes each tool's image and text stack vertically */
-    align-items: center;
-    width: 100px; /* Adjust width to fit the images */
+.tools-list.horizontal-list .tool {
+    flex: 0 0 auto; /* Prevents items from growing and shrinking */
+    margin-right: 20px; /* Adjust margin between items as needed */
 }
 
-.tool img {
-    width: 64px; /* Set a consistent image size */
-    height: auto;
-}
-
-.tool p {
-    margin-top: 10px;
-    font-size: 1em;
+.tools-list.horizontal-list .tool:last-child {
+    margin-right: 0; /* Removes margin from the last item to prevent extra space */
 }
