@@ -270,7 +270,7 @@ i {
 }
 
 p {
-  text-align: center;
+  /*text-align: justify;*/
   margin: 0 0 2rem 0;
 }
 
@@ -309,6 +309,7 @@ h2 {
   font-size: 1.75rem;
   line-height: 1.3;
   margin: 0 0 1.5rem 0;
+  text-align: center;
 }
 
 h3 {
@@ -432,11 +433,6 @@ code {
 
 hr {
   border-bottom-color: #eeeeee;
-}
-
-.main-title {
-  font-size: 2.2rem;
-  letter-spacing: 0;
 }
 
 /* Row */
@@ -3052,7 +3048,7 @@ header > h4 + p {
 }
 
 header.major {
-  margin: 0 0 4rem 0;
+  margin: 0 0 1rem 0;
   text-align: center;
 }
 
@@ -3574,7 +3570,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 @media screen and (max-width: 980px) {
   #intro {
     padding: 4rem 4rem 2rem 4rem;
-    min-height: 90vh;
+    min-height: 60vh;
   }
 
   #intro p br {
@@ -3589,7 +3585,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 @media screen and (max-width: 736px) {
   #intro {
     padding: 3rem 2rem 1rem 2rem;
-    min-height: 80vh;
+    min-height: 50vh;
   }
 
   #intro h1 {
@@ -3897,7 +3893,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #main > * {
-  padding: 4rem 4rem 2rem 4rem;
+  padding: 4rem;
   border-top: solid 2px #eeeeee;
   margin: 0;
 }
@@ -3920,9 +3916,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #main > .post header.major > h1,
 #main > .post header.major h2 {
-  font-size: 4rem;
-  line-height: 1.1;
-  margin: 0 0 2rem 0;
+  font-size: 2.2rem;
+  /*line-height: 1.1;
+  margin: 0 0 2rem 0;*/
 }
 
 #main > .post.featured {
@@ -3947,7 +3943,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
   #main > .post header.major > h1,
   #main > .post header.major h2 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
   }
@@ -4811,33 +4807,26 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     visibility: visible;
   }
 }
-
-/* CSS for the Tools Section */
 .tools-section {
-    text-align: center;
-    margin: 2em 0;
+  margin-top: 50px; /* Adjust this value to create space between sections */
+  padding-top: 20px; /* Optional: You can use padding as well */
 }
 
 .tools-list {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    gap: 20px; /* Adds space between the tools */
+  display: flex; /* This makes the list of tools appear in a row */
+  justify-content: space-between; /* Optional: Adds space between tools */
+  flex-wrap: wrap; /* Ensures tools wrap to the next line if the screen is too narrow */
 }
 
 .tool {
-    display: flex;
-    flex-direction: column; /* Makes each tool's image and text stack vertically */
-    align-items: center;
-    width: 100px; /* Adjust width to fit the images */
+  text-align: center; /* Centers the image and name */
+  margin: 8px; /* Adjust the space between the items */
 }
 
 .tool img {
-    width: 64px; /* Set a consistent image size */
-    height: auto;
+  max-width: 100px; /* Optional: Adjust the size of the images */
 }
 
 .tool p {
-    margin-top: 10px;
-    font-size: 1em;
+  margin-top: 5px; /* Adds space between the image and the tool name */
 }
