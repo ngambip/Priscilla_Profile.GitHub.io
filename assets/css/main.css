@@ -434,6 +434,11 @@ hr {
   border-bottom-color: #eeeeee;
 }
 
+.main-title {
+  font-size: 2.2rem;
+  letter-spacing: 0;
+}
+
 /* Row */
 
 .row {
