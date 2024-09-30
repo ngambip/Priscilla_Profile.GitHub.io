@@ -4829,4 +4829,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 .tool p {
   margin-top: 5px; /* Adds space between the image and the tool name */
+
 }
+
+
+
+
