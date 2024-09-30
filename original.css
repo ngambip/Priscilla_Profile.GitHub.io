@@ -270,7 +270,7 @@ i {
 }
 
 p {
-  /*text-align: justify;*/
+  text-align: justify;
   margin: 0 0 2rem 0;
 }
 
@@ -309,7 +309,6 @@ h2 {
   font-size: 1.75rem;
   line-height: 1.3;
   margin: 0 0 1.5rem 0;
-  text-align: center;
 }
 
 h3 {
@@ -2721,9 +2720,9 @@ input[type="radio"]:focus + label:before {
 }
 
 .image.fit {
-  /*display: block;*/
+  display: block;
   margin: 2.5rem 0;
-  /*width: 100%;*/
+  width: 100%;
 }
 
 .image.fit:first-child {
@@ -3048,7 +3047,7 @@ header > h4 + p {
 }
 
 header.major {
-  margin: 0 0 1rem 0;
+  margin: 0 0 4rem 0;
   text-align: center;
 }
 
@@ -3570,7 +3569,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 @media screen and (max-width: 980px) {
   #intro {
     padding: 4rem 4rem 2rem 4rem;
-    min-height: 60vh;
+    min-height: 90vh;
   }
 
   #intro p br {
@@ -3585,7 +3584,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 @media screen and (max-width: 736px) {
   #intro {
     padding: 3rem 2rem 1rem 2rem;
-    min-height: 50vh;
+    min-height: 80vh;
   }
 
   #intro h1 {
@@ -3893,7 +3892,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #main > * {
-  padding: 4rem;
+  padding: 4rem 4rem 2rem 4rem;
   border-top: solid 2px #eeeeee;
   margin: 0;
 }
@@ -3916,9 +3915,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #main > .post header.major > h1,
 #main > .post header.major h2 {
-  font-size: 2.2rem;
-  /*line-height: 1.1;
-  margin: 0 0 2rem 0;*/
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 0 0 2rem 0;
 }
 
 #main > .post.featured {
@@ -3943,7 +3942,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
   #main > .post header.major > h1,
   #main > .post header.major h2 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
   }
@@ -4807,31 +4806,3 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     visibility: visible;
   }
 }
-.tools-section {
-  margin-top: 50px; /* Adjust this value to create space between sections */
-  padding-top: 20px; /* Optional: You can use padding as well */
-}
-
-.tools-list {
-  display: flex; /* This makes the list of tools appear in a row */
-  justify-content: space-between; /* Optional: Adds space between tools */
-  flex-wrap: wrap; /* Ensures tools wrap to the next line if the screen is too narrow */
-}
-
-.tool {
-  text-align: center; /* Centers the image and name */
-  margin: 8px; /* Adjust the space between the items */
-}
-
-.tool img {
-  max-width: 100px; /* Optional: Adjust the size of the images */
-}
-
-.tool p {
-  margin-top: 5px; /* Adds space between the image and the tool name */
-
-}
-
-
-
-
